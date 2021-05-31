@@ -21,7 +21,7 @@ while o==1:
     WindowTitle=win32gui.GetWindowText(hwnd)
     if WindowTitle != "":
         print(WindowTitle)
-    if WindowTitle == 'REASON - Pop Shit':
+    if WindowTitle == 'Advertisement':
         time.sleep(3)
         p = psutil.Process(pid[1])
         p.terminate()
