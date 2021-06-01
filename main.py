@@ -16,7 +16,10 @@ hwnd=win32gui.FindWindow(None, WindowName)
 pid=win32process.GetWindowThreadProcessId(hwnd)
 print(pid)
 o=1
-while o==1:
+
+def AdKiller():
+    global hwnd
+    global pid
     time.sleep(0.5)
     WindowTitle=win32gui.GetWindowText(hwnd)
     if WindowTitle != "":
@@ -29,15 +32,28 @@ while o==1:
         activewindow = (win32gui.GetWindowText(win32gui.GetForegroundWindow()))
         pywinauto.application.Application().connect(best_match=activewindow).top_window().set_focus()
         time.sleep(7)
-        handle = gw.getWindowsWithTitle('Spotify Free')[0]
+        WindowName = "Spotify Free"
+        hwnd=win32gui.FindWindow(None, WindowName)
+        pid=win32process.GetWindowThreadProcessId(hwnd)
+        print(pid)
+        try:
+            handle = gw.getWindowsWithTitle('Spotify Free')[0]
+        except:
+            pass
         try:
             pywinauto.application.Application().connect(best_match='Spotify').top_window().set_focus()
         except:
             pass
-        handle.activate()
-        handle.maximize()
-        time.sleep(0.5)
-        keyboard = Controller()
-        keyboard.press(Key.space)
-        handle.minimize()
-        print('Closed Ad')
+        try:
+            handle.activate()
+            handle.maximize()
+            time.sleep(0.5)
+            keyboard = Controller()
+            keyboard.press(Key.space)
+            handle.minimize()
+            print('Closed Ad')
+        except:
+            pass
+        return
+while o==1:
+    AdKiller()
