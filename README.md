@@ -7,7 +7,8 @@
 <br>
 
 ## Disclaimer 
-### This is for testing purposes ONLY!
+<h3> This is for testing purposes ONLY! </h3>
+<h4> I don't know if anyone else has done this before. if they have, their script is probably better than mine.
 
 ## How does it work?
 It checks for window name changes and it'll exit spotify and relaunch it when spotify is playing "Advertisement".
