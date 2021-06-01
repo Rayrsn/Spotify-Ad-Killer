@@ -6,6 +6,9 @@
 <hr>
 <br>
 
+## Disclaimer 
+### This is for testing purposes ONLY!
+
 ## How does it work?
 It checks for window name changes and it'll exit spotify and relaunch it when spotify is playing "Advertisement".
 
