@@ -1,6 +1,7 @@
 # Spotify Ad Killer
 
 ### <h2 align="center"> <i> <b> A Python script which automatically kills spotify ads</b> </i> </h2>
+### <h4 align="center"> <b> Currently in testing phase.</b> </h4>
 
 <br>
 <hr>
