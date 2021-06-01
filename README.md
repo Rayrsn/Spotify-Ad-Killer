@@ -17,7 +17,7 @@ There's this known bug which let's you skip ads if you exit spotify entirely and
 2. Run `python -m pip install -r requirements.txt`.
 
 ## Running the script
-1. Exit Spotify entirely.
+1. Exit Spotify entirely or just pause the music.
 2. Open the directory in your preferred terminal.
 3. Run `python main.py`.
 
