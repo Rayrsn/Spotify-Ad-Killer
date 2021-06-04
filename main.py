@@ -15,6 +15,11 @@ WindowName = "Spotify Free"
 hwnd=win32gui.FindWindow(None, WindowName)
 pid=win32process.GetWindowThreadProcessId(hwnd)
 print(pid)
+if pid[0] == 0:
+    os.system('cls')
+    print('\nNot hooked, please pause the music.\n')
+    print('Exiting now.')
+    exit()
 o=1
 
 def AdKiller():
@@ -30,7 +35,10 @@ def AdKiller():
         p.terminate()
         os.system('start '+SpotifyDir)
         activewindow = (win32gui.GetWindowText(win32gui.GetForegroundWindow()))
-        pywinauto.application.Application().connect(best_match=activewindow).top_window().set_focus()
+        try:
+            pywinauto.application.Application().connect(best_match=activewindow).top_window().set_focus()
+        except:
+            pass
         time.sleep(7)
         WindowName = "Spotify Free"
         hwnd=win32gui.FindWindow(None, WindowName)
@@ -51,6 +59,7 @@ def AdKiller():
             keyboard = Controller()
             keyboard.press(Key.space)
             handle.minimize()
+            os.system('cls')
             print('Closed Ad')
         except:
             pass
