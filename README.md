@@ -34,6 +34,7 @@ There's this known bug which let's you skip ads if you exit spotify entirely and
 4. Wait for the program to finish compiling the executable.
 5. Your file is located in `dist` directory.
 * You can replace any spotify shortcut with this file. (But remember to change the `"SpotifyDir"` value.)
+* If the executable exits with "Python38.dll not found" error, move the included Python38.dll to the directory.
 
 ## Warning
 * There is a limitation however, some ads don't change the window title to "Advertisement". I might design a system which detects those too but I'm lazy atm.
