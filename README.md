@@ -23,7 +23,7 @@ There's this known bug which let's you skip ads if you exit spotify entirely and
 
 ## Setting up and Running the script
 1. Replace the `"SpotifyDir"` value with the directory of your Spotify executable.
-2. Exit Spotify entirely or just pause the music.
+2. Exit Spotify entirely (Ctrl + Shift + Q) or just pause the music.
 3. Open the directory in your preferred terminal.
 4. Run `python main.py`.
 
