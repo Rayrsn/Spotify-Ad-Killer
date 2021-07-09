@@ -15,7 +15,7 @@
 
 ## How does it work?
 It checks for window name changes and it'll exit Spotify and relaunch it when Spotify  is playing anything that doesn't have "-" in the name.
-(Every song on Spotify has that has that in the name)
+(Every song on Spotify has that in the name)
 
 ## Why does it work
 There's this known bug which let's you skip ads if you exit Spotify entirely and relaunch it.
