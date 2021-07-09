@@ -1,9 +1,11 @@
 # Spotify Ad Killer
 
-### <h2 align="center"> <i> <b> A Python script which automatically kills/blocks spotify ads</b> </i> </h2>
-### <h4 align="center"> <b> Currently in testing phase.</b> </h4>
+### <h2 align="center"> <i> <b> A Python script which automatically kills/blocks Spotify ads*</b> </i> </h2>
+### <h4 align="center"> <b> ~~Currently in testing phase.~~</b> </h4>
+### <h4 align="center"> <b> Stable </b> </h4>
 
 <br>
+* Only works on Windows
 <hr>
 <br>
 
@@ -12,10 +14,11 @@
 <h4> I don't know if anyone else has done this before. if they have, their script is probably better than mine.
 
 ## How does it work?
-It checks for window name changes and it'll exit spotify and relaunch it when spotify is playing "Advertisement".
+It checks for window name changes and it'll exit Spotify and relaunch it when Spotify  is playing anything that doesn't have "-" in the name.
+(Every song on Spotify has that has that in the name)
 
 ## Why does it work
-There's this known bug which let's you skip ads if you exit spotify entirely and relaunch it.
+There's this known bug which let's you skip ads if you exit Spotify entirely and relaunch it.
 
 ## Installing Dependencies 
 1. Make sure you have Python 3 installed.
@@ -33,15 +36,17 @@ There's this known bug which let's you skip ads if you exit spotify entirely and
 3. Run this line of code `pyinstaller --icon=icon.ico --onefile --hidden-import "pynput.keyboard._win32" --hidden-import "pynput.mouse._win32" main.py`
 4. Wait for the program to finish compiling the executable.
 5. Your file is located in `dist` directory.
-* You can replace any spotify shortcut with this file. (But remember to change the `"SpotifyDir"` value.)
+* You can replace any Spotify shortcut with this file. (But remember to change the `"SpotifyDir"` value.)
 * If the executable exits with "Python38.dll not found" error, move the included Python38.dll to the directory.
 
+  
 ## Warning
-* There is a limitation however, some ads don't change the window title to "Advertisement". I might design a system which detects those too but I'm lazy atm.
+* ~~There is a limitation however, some ads don't change the window title to "Advertisement". I might design a system which detects those too but I'm lazy atm.~~
+  
+**The mentioned bug is fixed.**
 
 ## To-Do List
-- [ ] Fix the limitation.
+- [x] Fix the limitation.
 
 ## Questions
 ### If yall have any questions or just wanna talk, add me on [Discord](https://rayr.ml/LinkInBio) or use my username Rayr#6709 (this might change so it's better to just use the link)
-
