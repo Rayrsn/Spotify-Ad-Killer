@@ -25,11 +25,14 @@ o=1
 def AdKiller():
     global hwnd
     global pid
+    truefalse = 1
     time.sleep(0.5)
     WindowTitle=win32gui.GetWindowText(hwnd)
     if WindowTitle != "":
         print(WindowTitle)
-    if WindowTitle == 'Advertisement':
+    if WindowTitle != "Spotify Free":
+        truefalse = WindowTitle.find('-')
+    if truefalse == -1:
         time.sleep(3)
         p = psutil.Process(pid[1])
         p.terminate()
