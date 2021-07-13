@@ -19,6 +19,7 @@ if pid[0] == 0:
     os.system('cls')
     print('\nNot hooked, please pause the music.\n')
     print('Exiting now.')
+    time.sleep(5)
     exit()
 o=1
 
