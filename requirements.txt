@@ -1,5 +1,4 @@
 pynput==1.7.3
 pywin32==300
 PyGetWindow==0.0.9
-psutil==5.4.2
 pywinauto==0.6.6
