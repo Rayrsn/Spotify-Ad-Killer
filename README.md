@@ -1,6 +1,11 @@
 # Spotify Ad Killer
 
 ### <h2 align="center"> <i> <b> A Python script which automatically kills/blocks Spotify ads*</b> </i> </h2>
+
+<p align="center">
+<img src="https://img.shields.io/github/v/release/Rayrsn/Spotify-Ad-Killer?style=for-the-badge&logoWidth=20&color=8829d6" />
+</p>
+
 ### <h4 align="center"> <b> ~~Currently in testing phase.~~</b> </h4>
 ### <h4 align="center"> <b> Stable </b> </h4>
 
@@ -20,6 +25,10 @@ It checks for window name changes and it'll exit Spotify and relaunch it when Sp
 ## Why does it work
 There's this known bug which let's you skip ads if you exit Spotify entirely and relaunch it.
 
+# Using (without building)
+### <b> Just head to the [Releases](https://github.com/Rayrsn/Spotify-Ad-Killer/releases) tab and download the latest version.</b>
+* <ins> The Spotify directory in this release is in "appdata/roaming/spotify" </ins>
+  
 ## Installing Dependencies 
 1. Make sure you have Python 38 installed.
 2. First you have to install [VSCode Build Tools](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=BuildTools&rel=16)
