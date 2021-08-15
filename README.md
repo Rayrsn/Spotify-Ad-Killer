@@ -21,7 +21,7 @@ It checks for window name changes and it'll exit Spotify and relaunch it when Sp
 There's this known bug which let's you skip ads if you exit Spotify entirely and relaunch it.
 
 ## Installing Dependencies 
-1. Make sure you have Python 3 installed.
+1. Make sure you have Python 38 installed.
 2. First you have to install [VSCode Build Tools](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=BuildTools&rel=16)
 3. Then extract the repository and open a terminal in that directory.
 4. Run `python -m pip install -r requirements.txt` in the same directory.
