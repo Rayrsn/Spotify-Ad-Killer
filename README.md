@@ -22,7 +22,10 @@ There's this known bug which let's you skip ads if you exit Spotify entirely and
 
 ## Installing Dependencies 
 1. Make sure you have Python 3 installed.
-2. Run `python -m pip install -r requirements.txt`.
+2. First you have to install [VSCode Build Tools](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=BuildTools&rel=16)
+3. Then extract the repository and open a terminal in that directory.
+4. Run `python -m pip install -r requirements.txt` in the same directory.
+5. And finally run `pip install --only-binary :all: psutil`
 
 ## Setting up and Running the script
 1. Replace the `"SpotifyDir"` value with the directory of your Spotify executable.
