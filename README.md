@@ -30,11 +30,10 @@ There's this known bug which let's you skip ads if you exit Spotify entirely and
 * <ins> The Spotify directory in this release is in "appdata/roaming/spotify" </ins>
   
 ## Installing Dependencies 
-1. Make sure you have Python 38 installed.
-2. First you have to install [VSCode Build Tools](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=BuildTools&rel=16)
-3. Then extract the repository and open a terminal in that directory.
-4. Run `python -m pip install -r requirements.txt` in the same directory.
-5. And finally run `pip install --only-binary :all: psutil`
+1. Make sure you have Python 3.8 installed.
+2. Then extract the repository and open a terminal in that directory.
+3. Run `python -m pip install -r requirements.txt` in the same directory.
+4. And finally run `pip install --only-binary :all: psutil`
 
 ## Setting up and Running the script
 1. Replace the `"SpotifyDir"` value with the directory of your Spotify executable.
