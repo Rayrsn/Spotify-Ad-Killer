@@ -26,7 +26,7 @@ It checks for window name changes and it'll exit Spotify and relaunch it when Sp
 There's this known bug which let's you skip ads if you exit Spotify entirely and relaunch it.
 
 # Using (without building)
-### <b> Just head to the [Releases](https://github.com/Rayrsn/Spotify-Ad-Killer/releases) tab and download the latest version.</b>
+### <b> Just head to the [Latest Release](https://github.com/Rayrsn/Spotify-Ad-Killer/releases/latest) tab and download the latest version.</b>
 * <ins> The Spotify directory in this release is in "appdata/roaming/spotify" </ins>
   
 ## Installing Dependencies 
@@ -51,10 +51,11 @@ There's this known bug which let's you skip ads if you exit Spotify entirely and
 * If the executable exits with "Python39.dll not found" error, move the included Python39.dll to the directory.
 * You can use whatever version of python3 you have but to fix the "python3*.dll not found" you have to look through your python dir. 
   
-## Warning
-* ~~There is a limitation however, some ads don't change the window title to "Advertisement". I might design a system which detects those too but I'm lazy atm.~~
+## Acknowledgments
+* ~~There is a limitation however, some ads don't change the window title to "Advertisement". I might design a system which detects those too but I'm lazy atm.~~  
   
 **The mentioned bug is fixed.**
+* Some antivirus softwares incorrectly detect the precompiled version ([Latest Release](https://github.com/Rayrsn/Spotify-Ad-Killer/releases/latest)) as malware. This is a known issue caused by building executables with pyinstaller ([Yara rule](https://github.com/bartblaze/Yara-rules/blob/4ccecf6b6fd357a31dfb34d8793c9f59244b7e44/rules/generic/PyInstaller.yar) and [Virustotal Scan](https://www.virustotal.com/gui/file/93aa75640348f607b255d7eef3a01b5dfd9383e1367e859da4bf58adcfc6caa4/detection)).
 
 ## To-Do List
 - [x] Fix the limitation.
