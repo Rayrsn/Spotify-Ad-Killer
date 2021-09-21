@@ -30,7 +30,7 @@ There's this known bug which let's you skip ads if you exit Spotify entirely and
 * <ins> The Spotify directory in this release is in "appdata/roaming/spotify" </ins>
   
 ## Installing Dependencies 
-1. Make sure you have Python 3.8 installed.
+1. Make sure you have Python 3.9 installed.
 2. Then extract the repository and open a terminal in that directory.
 3. Run `python -m pip install -r requirements.txt` in the same directory.
 4. And finally run `pip install --only-binary :all: psutil`
@@ -48,8 +48,8 @@ There's this known bug which let's you skip ads if you exit Spotify entirely and
 4. Wait for the program to finish compiling the executable.
 5. Your file is located in `dist` directory.
 * You can replace any Spotify shortcut with this file. (But remember to change the `"SpotifyDir"` value.)
-* If the executable exits with "Python38.dll not found" error, move the included Python38.dll to the directory.
-
+* If the executable exits with "Python39.dll not found" error, move the included Python39.dll to the directory.
+* You can use whatever version of python3 you have but to fix the "python3*.dll not found" you have to look through your python dir. 
   
 ## Warning
 * ~~There is a limitation however, some ads don't change the window title to "Advertisement". I might design a system which detects those too but I'm lazy atm.~~
