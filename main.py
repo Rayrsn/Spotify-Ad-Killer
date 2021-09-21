@@ -63,6 +63,7 @@ def AdKiller():
             keyboard = Controller()
             keyboard.press(Key.space)
             handle.minimize()
+            os.system('cls')
             print('Closed Ad')
         except:
             pass
