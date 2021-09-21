@@ -10,7 +10,7 @@ import time
 SpotifyDir = "%appdata%/Spotify/Spotify.exe"
 os.system('start '+SpotifyDir)
 time.sleep(3)
-
+emptyspace="                                                                 "
 WindowName = "Spotify Free"
 hwnd=win32gui.FindWindow(None, WindowName)
 pid=win32process.GetWindowThreadProcessId(hwnd)
@@ -30,7 +30,7 @@ def AdKiller():
     time.sleep(0.5)
     WindowTitle=win32gui.GetWindowText(hwnd)
     if WindowTitle != "":
-        print(WindowTitle)
+        print(WindowTitle+emptyspace,end="\r")
     if WindowTitle != "Spotify Free":
         truefalse = WindowTitle.find('-')
     if truefalse == -1:
@@ -63,7 +63,6 @@ def AdKiller():
             keyboard = Controller()
             keyboard.press(Key.space)
             handle.minimize()
-            os.system('cls')
             print('Closed Ad')
         except:
             pass
